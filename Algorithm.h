@@ -4,7 +4,11 @@
 // template of path finding algorithms
 class Algorithm {
 public:
-  virtual run(int start_x, int start_y, int end_x, int end_y);
+  int start_x, start_y, end_x, end_y;
+  // do one cycle calculation
+  virtual void run(int** map);
+  // check whether repeat more or stop
+  virtual bool check();
 }
 
 #endif
